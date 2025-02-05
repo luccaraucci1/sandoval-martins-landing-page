@@ -8,5 +8,7 @@ export const defaultTheme = {
 
     'text-primary': 'white',
     'text-secondary': '#9F9F9F',
+
+    border: '#2d2d2d',
   },
 }

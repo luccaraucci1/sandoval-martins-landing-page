@@ -9,6 +9,7 @@ declare module 'styled-components' {
       'orange-300': string
       'text-primary': string
       'text-secondary': string
+      border: string
     }
   }
 }

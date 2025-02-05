@@ -14,6 +14,7 @@ export const LecturesHeader = styled.div`
   h2 {
     font-size: 18px;
     color: ${(props) => props.theme.colors['orange-300']};
+    letter-spacing: 0.1rem;
   }
 `
 export const HeaderDescription = styled.div`

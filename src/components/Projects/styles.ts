@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProjectsContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
-  margin-bottom: 8rem;
+  margin-bottom: 4rem;
 `
 export const ProjectsHeader = styled.div`
   display: flex;
@@ -14,6 +14,7 @@ export const ProjectsHeader = styled.div`
   h2 {
     font-size: 18px;
     color: ${(props) => props.theme.colors['orange-300']};
+    letter-spacing: 0.1rem;
   }
 `
 export const HeaderDescription = styled.div`
@@ -23,7 +24,7 @@ export const HeaderDescription = styled.div`
   box-sizing: border-box;
 `
 export const ProjectsContent = styled.div`
-  padding: 0 5rem;
+  padding: 0 3rem;
 `
 
 export const ProjectsRow = styled.div`
@@ -31,24 +32,42 @@ export const ProjectsRow = styled.div`
   justify-content: space-between;
 `
 
-export const Project = styled.div`
-  width: 500px;
-  border: 1px solid red;
-`
-
 export const ProjectDescription = styled.div`
   display: flex;
   align-items: center;
+  padding: 4rem 0;
+  gap: 32px;
+  h1 {
+    font-size: 22px;
+    margin-bottom: 1rem;
+  }
+  > div {
+    display: flex;
+  }
 `
 
 export const ArrowIcon = styled.div`
   border: 1px solid ${(props) => props.theme.colors['orange-300']};
-  width: 50px;
+  width: 40px;
+  height: 40px;
   padding: 0.25rem;
-  border-radius: 6px;
+  border-radius: 8px;
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-right: 2rem;
+  transition: background-color 0.2s ease-in-out;
 `
 
-export const Description = styled.div``
+export const Project = styled.div`
+  width: 550px;
+  cursor: pointer;
+
+  &:hover ${ArrowIcon} {
+    background-color: ${(props) => props.theme.colors['orange-300']};
+  }
+`
+
+export const Description = styled.div`
+  width: 450px;
+`

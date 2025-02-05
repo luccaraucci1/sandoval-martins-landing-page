@@ -12,12 +12,12 @@ export const GlobalStyle = createGlobalStyle`
     color: #FFFFFF;
   }
 
-  h1, h2{
+  h1, h2, p{
     font-family: 'Finlandica', sans-serif;
     font-weight: 700;
   }
 
-  p, span, li{
+   span, li{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     line-height: 185%;
