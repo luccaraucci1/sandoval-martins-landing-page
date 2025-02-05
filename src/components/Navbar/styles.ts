@@ -28,6 +28,7 @@ export const NavbarItems = styled.div`
     a {
       text-decoration: none;
       transition: color 0.2s ease-in-out;
+      color: white;
       &:hover {
         color: ${(props) => props.theme.colors['orange-300']};
       }
