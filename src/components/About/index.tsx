@@ -15,7 +15,7 @@ import keyImg from '../../../public/images/about-4.png'
 
 export function About() {
   return (
-    <AboutContainer>
+    <AboutContainer id="about">
       <SoftSkills>
         <Skill>
           <img

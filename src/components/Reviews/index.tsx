@@ -30,10 +30,11 @@ export function Reviews() {
             <h2>Cameron Williamson</h2>
             <span>CEO da Multiplus</span>
           </Author>
-          <img src={quotes} />
+          <img src={quotes} alt="Imagem Representando Aspas" />
         </Text>
         <img src={ceoImg1} width={400} alt="Imagem do Ceo que fez a review" />
       </Review>
+
       <Review>
         <Text>
           <h1>
@@ -44,7 +45,7 @@ export function Reviews() {
             <h2>Sakib Hasan</h2>
             <span>CFO do Banco Inter</span>
           </Author>
-          <img src={quotes} />
+          <img src={quotes} alt="Imagem Representando Aspas" />
         </Text>
         <img src={ceoImg2} width={400} alt="Imagem do Ceo que fez a review" />
       </Review>

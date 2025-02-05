@@ -7,18 +7,6 @@ export const ReviewsContainer = styled.div`
   gap: 16px;
   margin-bottom: 8rem;
 `
-
-export const Review = styled.div`
-  display: flex;
-  position: relative;
-  width: 700px;
-  justify-content: center;
-`
-
-export const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-`
 export const ArrowIcon = styled.div`
   display: flex;
   align-items: center;
@@ -27,6 +15,29 @@ export const ArrowIcon = styled.div`
   border-radius: 8px;
   width: 40px;
   height: 40px;
+`
+
+export const Review = styled.a`
+  display: flex;
+  position: relative;
+  width: 700px;
+  justify-content: center;
+  cursor: pointer;
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
+
+  &:hover ~ ${ArrowIcon} {
+    background-color: ${(props) => props.theme.colors['orange-300']};
+  }
+`
+
+export const IconContainer = styled.div`
+  display: flex;
+  align-items: center;
 `
 
 export const Text = styled.div`

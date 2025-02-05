@@ -39,16 +39,19 @@ export const OrangeText = styled.h1`
   color: ${(props) => props.theme.colors['orange-300']} !important;
 `
 
-export const WhatsAppButton = styled.div`
+export const WhatsAppButton = styled.button`
   width: 186px;
+  background: transparent;
+  color: white;
   border: 1px solid ${(props) => props.theme.colors['text-secondary']};
   display: flex;
   padding: 0.75rem;
   border-radius: 32px;
   align-items: center;
   justify-content: center;
-
   gap: 16px;
+  cursor: pointer;
+
   h1 {
     font-size: 16px;
     margin: auto 0;

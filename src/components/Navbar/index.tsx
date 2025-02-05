@@ -30,11 +30,22 @@ export function Navbar() {
         </Logo>
         <NavbarItems>
           <ul>
-            <li>Home</li>
-            <li>Sobre</li>
-            <li>Palestras</li>
-            <li>Projetos</li>
-            <li>Contato</li>
+            <li>
+              <a href="/">Home</a>
+            </li>
+
+            <li>
+              <a href="#about">Sobre</a>
+            </li>
+            <li>
+              <a href="#lectures">Palestras</a>
+            </li>
+            <li>
+              <a href="#projects">Projetos</a>
+            </li>
+            <li>
+              <a href="#contact">Contato</a>
+            </li>
           </ul>
         </NavbarItems>
       </LogoAndNavbar>

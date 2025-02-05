@@ -43,6 +43,9 @@ export const Skill = styled.div`
       ${(props) => props.theme.colors['orange-300']},
       #290c0c
     );
+    mask:
+      linear-gradient(white 0 0) content-box,
+      linear-gradient(white 0 0);
     -webkit-mask:
       linear-gradient(white 0 0) content-box,
       linear-gradient(white 0 0);

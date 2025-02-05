@@ -48,9 +48,21 @@ export const Description = styled.div`
   color: ${(props) => props.theme.colors['text-secondary']};
 `
 
-export const More = styled.div`
+export const More = styled.a`
   display: flex;
   letter-spacing: 1.28px;
   align-items: center;
   gap: 8px;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  cursor: pointer;
+  &:hover {
+    color: ${(props) => props.theme.colors['orange-300']};
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color: ${(props) => props.theme.colors['orange-300']};
+    }
+  }
 `

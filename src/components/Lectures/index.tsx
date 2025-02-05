@@ -11,7 +11,7 @@ import { CompanyLogos } from '../CompanyLogos'
 
 export function Lectures() {
   return (
-    <LecturesContainer>
+    <LecturesContainer id="lectures">
       <LecturesHeader>
         <h2>PALESTRAS</h2>
         <h1>Inspirando o Mundo com Cada Projeto</h1>

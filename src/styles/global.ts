@@ -6,6 +6,10 @@ export const GlobalStyle = createGlobalStyle`
     padding: 0;
   }
 
+  html {
+    scroll-behavior: smooth;
+  }
+
   body {  
     background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;

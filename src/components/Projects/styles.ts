@@ -59,9 +59,15 @@ export const ArrowIcon = styled.div`
   transition: background-color 0.2s ease-in-out;
 `
 
-export const Project = styled.div`
+export const Project = styled.a`
   width: 550px;
   cursor: pointer;
+  text-decoration: none;
+
+  &:visited {
+    text-decoration: none;
+    color: white;
+  }
 
   &:hover ${ArrowIcon} {
     background-color: ${(props) => props.theme.colors['orange-300']};

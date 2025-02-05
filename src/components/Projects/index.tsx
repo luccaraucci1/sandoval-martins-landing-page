@@ -18,7 +18,7 @@ import projectsImg4 from '../../../public/images/projects-4.png'
 
 export function Projects() {
   return (
-    <ProjectsContainer>
+    <ProjectsContainer id="projects">
       <ProjectsHeader>
         <h2>PROJETOS</h2>
         <h1>Transformando Ideias em Resultados Excepcionais</h1>
@@ -32,7 +32,7 @@ export function Projects() {
       </ProjectsHeader>
       <ProjectsContent>
         <ProjectsRow>
-          <Project>
+          <Project href="/">
             <img src={projectsImg1} width={550} alt="Imagem para Video" />
             <ProjectDescription>
               <div>
@@ -49,7 +49,7 @@ export function Projects() {
               </div>
             </ProjectDescription>
           </Project>
-          <Project>
+          <Project href="/">
             <img src={projectsImg2} width={550} alt="Imagem para Video" />
             <ProjectDescription>
               <div>
@@ -69,7 +69,7 @@ export function Projects() {
           </Project>
         </ProjectsRow>
         <ProjectsRow>
-          <Project>
+          <Project href="/">
             <img src={projectsImg3} width={550} alt="Imagem para Video" />
             <ProjectDescription>
               <div>
@@ -87,7 +87,7 @@ export function Projects() {
               </div>
             </ProjectDescription>
           </Project>
-          <Project>
+          <Project href="/">
             <img src={projectsImg4} width={550} alt="Imagem para Video" />
             <ProjectDescription>
               <div>

@@ -30,7 +30,7 @@ import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
 export function Footer() {
   return (
-    <FooterContainer>
+    <FooterContainer id="contact">
       <FooterContentWrapper>
         <FooterContent>
           <EmailContainer>

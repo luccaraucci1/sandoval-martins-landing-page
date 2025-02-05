@@ -9,6 +9,10 @@ import {
 import whatsappLogo from '../../../public/images/whatsapp.png'
 
 export function Hero() {
+  function handleWhatsAppButtonClick() {
+    window.location.href = 'https://wa.me/5511987654321'
+  }
+
   return (
     <HeroContainer>
       <HeroContentWrapper>
@@ -25,7 +29,7 @@ export function Hero() {
             estratégias e experiências para impulsionar carreiras e negócios.
           </span>
 
-          <WhatsAppButton>
+          <WhatsAppButton onClick={() => handleWhatsAppButtonClick()}>
             <h1>WhatsApp</h1>
             <img src={whatsappLogo} width={32} alt="Logo do whatsapp" />
           </WhatsAppButton>
