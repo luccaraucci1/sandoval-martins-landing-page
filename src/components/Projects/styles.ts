@@ -75,6 +75,7 @@ export const ArrowIcon = styled.div`
 export const Project = styled.a`
   width: 550px;
   cursor: pointer;
+  color: white;
   text-decoration: none;
 
   &:visited {
@@ -89,6 +90,11 @@ export const Project = styled.a`
     width: auto;
     img {
       width: 300px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    img {
+      width: 600px;
     }
   }
 `

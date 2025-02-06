@@ -37,7 +37,13 @@ export const ArrowIconMobile = styled.div`
   border-radius: 8px;
   width: 40px;
   height: 40px;
-  @media (min-width: 768px) {
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    border: 1px solid red;
+    top: -20px;
+    left: 500px;
+  }
+  @media (min-width: 1024px) {
     display: none;
   }
 `
@@ -89,6 +95,7 @@ export const Text = styled.div`
 
   @media (max-width: 768px) {
     width: 200px;
+
     img {
       display: none;
     }
@@ -100,6 +107,10 @@ export const Text = styled.div`
     h2 {
       font-size: 16px;
     }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 40px;
+    left: 100px;
   }
 `
 

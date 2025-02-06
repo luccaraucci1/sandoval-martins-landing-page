@@ -19,8 +19,12 @@ import {
 
 import logo from '../../../public/images/logo.png'
 import menuIcon from '../../../public/images/menu-icon.png'
+import { MobileMenu } from '../MobileMenu'
+import { useState } from 'react'
 
 export function Navbar() {
+  const [openMobileMenu, setOpenMobileMenu] = useState(false)
+
   return (
     <NavbarContainer>
       <LogoAndNavbar>
@@ -64,9 +68,14 @@ export function Navbar() {
             <FontAwesomeIcon size={'lg'} icon={faXTwitter} />
           </Icon>
         </SocialMedia>
-        <Menu>
+
+        <Menu onClick={() => setOpenMobileMenu(true)}>
           <img src={menuIcon} width={22} alt="Icone de Menu" />
         </Menu>
+        <MobileMenu
+          openMobileMenu={openMobileMenu}
+          setOpenMobileMenu={setOpenMobileMenu}
+        />
       </SocialMediaAndMenu>
     </NavbarContainer>
   )

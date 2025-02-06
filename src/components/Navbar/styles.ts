@@ -76,6 +76,7 @@ export const Icon = styled.div`
 `
 
 export const Menu = styled.div`
+  position: relative;
   display: flex;
   width: 46px;
   height: 46px;
@@ -83,4 +84,7 @@ export const Menu = styled.div`
   border-radius: 100%;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `

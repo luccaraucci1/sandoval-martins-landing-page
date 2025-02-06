@@ -131,4 +131,8 @@ export const ExperienceRecordCard = styled.div`
     width: 150px;
     padding: 1rem;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 300px;
+    padding: 1rem;
+  }
 `

@@ -29,6 +29,11 @@ export const EmailContainer = styled.div`
   @media (max-width: 768px) {
     width: auto;
   }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 export const EmailHeader = styled.div`
@@ -61,6 +66,9 @@ export const Email = styled.div`
   padding: 0.5rem 0;
   justify-content: space-between;
   border-bottom: 2px solid ${(props) => props.theme.colors.border};
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 80%;
+  }
 `
 
 export const QuickLinks = styled.div`
