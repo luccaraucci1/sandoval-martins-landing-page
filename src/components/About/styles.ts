@@ -8,6 +8,11 @@ export const AboutContainer = styled.div`
 export const SoftSkills = styled.div`
   display: flex;
   gap: 32px;
+  @media (max-width: 768px) {
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 4rem;
+  }
 `
 
 export const Skill = styled.div`
@@ -56,6 +61,9 @@ export const Skill = styled.div`
 export const Experience = styled.div`
   display: flex;
   gap: 32px;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const Years = styled.div`
@@ -67,6 +75,10 @@ export const Years = styled.div`
   );
   border-radius: 16px;
   padding: 2rem 4rem 4rem 4rem;
+  @media (max-width: 768px) {
+    width: auto;
+    margin: 0 1rem;
+  }
 `
 
 export const YearsHeader = styled.div`
@@ -81,6 +93,15 @@ export const YearsHeader = styled.div`
   h2 {
     font-size: 48.14px;
   }
+
+  @media (max-width: 768px) {
+    h1 {
+      font-size: 100px;
+    }
+    h2 {
+      font-size: 30px;
+    }
+  }
 `
 
 export const ExperienceRecord = styled.div`
@@ -88,6 +109,10 @@ export const ExperienceRecord = styled.div`
   width: 48%;
   flex-wrap: wrap;
   gap: 16px;
+  @media (max-width: 768px) {
+    width: auto;
+    justify-content: center;
+  }
 `
 
 export const ExperienceRecordCard = styled.div`
@@ -101,5 +126,13 @@ export const ExperienceRecordCard = styled.div`
   background-color: ${(props) => props.theme.colors['background-secondary']};
   h1 {
     font-size: 48px;
+  }
+  @media (max-width: 768px) {
+    width: 150px;
+    padding: 1rem;
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    width: 300px;
+    padding: 1rem;
   }
 `

@@ -3,6 +3,7 @@ import heroBg from '../../../public/images/hero.png'
 
 export const HeroContainer = styled.div`
   background: url(${heroBg});
+
   height: 800px;
 `
 
@@ -31,6 +32,10 @@ export const HeroContent = styled.div`
 
   span {
     color: ${(props) => props.theme.colors['text-secondary']};
+  }
+  @media (max-width: 768px) {
+    width: auto;
+    padding: 0 1rem;
   }
 `
 

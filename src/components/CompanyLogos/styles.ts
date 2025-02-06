@@ -7,6 +7,11 @@ export const CompanyLogosContainer = styled.div`
   border: 1px solid ${(props) => props.theme.colors['background-secondary']};
   background: ${(props) => props.theme.colors['background-terciary']};
   overflow: hidden;
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 8rem;
+  }
 `
 
 export const Company = styled.div`

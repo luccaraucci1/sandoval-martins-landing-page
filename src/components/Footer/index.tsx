@@ -61,7 +61,7 @@ export function Footer() {
             </ul>
           </QuickLinks>
           <Contact>
-            <h2>Contact</h2>
+            <h2>Contato</h2>
             <ContactInfo>
               <Item>
                 <Icon>

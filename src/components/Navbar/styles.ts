@@ -4,6 +4,10 @@ export const NavbarContainer = styled.div`
   display: flex;
   padding: 2rem 0;
   justify-content: space-between;
+
+  @media (max-width: 768px) {
+    margin: 0 0.5rem;
+  }
 `
 
 export const LogoAndNavbar = styled.div`
@@ -40,6 +44,10 @@ export const NavbarItems = styled.div`
       }
     }
   }
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const SocialMediaAndMenu = styled.div`
@@ -50,6 +58,10 @@ export const SocialMediaAndMenu = styled.div`
 export const SocialMedia = styled.div`
   display: flex;
   gap: 8px;
+
+  @media (max-width: 768px) {
+    display: none;
+  }
 `
 
 export const Icon = styled.div`
@@ -64,6 +76,7 @@ export const Icon = styled.div`
 `
 
 export const Menu = styled.div`
+  position: relative;
   display: flex;
   width: 46px;
   height: 46px;
@@ -71,4 +84,7 @@ export const Menu = styled.div`
   border-radius: 100%;
   align-items: center;
   justify-content: center;
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `

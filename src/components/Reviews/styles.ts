@@ -6,6 +6,12 @@ export const ReviewsContainer = styled.div`
   margin: 0 auto;
   gap: 16px;
   margin-bottom: 8rem;
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+    flex-direction: column;
+    gap: 128px;
+  }
 `
 export const ArrowIcon = styled.div`
   display: flex;
@@ -15,6 +21,31 @@ export const ArrowIcon = styled.div`
   border-radius: 8px;
   width: 40px;
   height: 40px;
+  @media (max-width: 768px) {
+    display: none;
+  }
+`
+
+export const ArrowIconMobile = styled.div`
+  position: absolute;
+  top: -20px;
+  left: 320px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: ${(props) => props.theme.colors['orange-300']};
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+
+  @media (min-width: 768px) and (max-width: 1024px) {
+    border: 1px solid red;
+    top: -20px;
+    left: 500px;
+  }
+  @media (min-width: 1024px) {
+    display: none;
+  }
 `
 
 export const Review = styled.a`
@@ -32,6 +63,13 @@ export const Review = styled.a`
 
   &:hover ~ ${ArrowIcon} {
     background-color: ${(props) => props.theme.colors['orange-300']};
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
+    > img {
+      width: 300px;
+    }
   }
 `
 
@@ -52,7 +90,27 @@ export const Text = styled.div`
   }
 
   h2 {
-    font-size: 24pxs;
+    font-size: 24px;
+  }
+
+  @media (max-width: 768px) {
+    width: 200px;
+
+    img {
+      display: none;
+    }
+    h1 {
+      font-size: 24px;
+      line-height: 130%;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    top: 40px;
+    left: 100px;
   }
 `
 

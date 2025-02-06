@@ -4,6 +4,10 @@ export const ProjectsContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 4rem;
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+    margin-bottom: 4rem;
+  }
 `
 export const ProjectsHeader = styled.div`
   display: flex;
@@ -22,6 +26,9 @@ export const HeaderDescription = styled.div`
   padding: 0 1rem;
   text-align: center;
   box-sizing: border-box;
+  @media (max-width: 768px) {
+    width: auto;
+  }
 `
 export const ProjectsContent = styled.div`
   padding: 0 3rem;
@@ -30,6 +37,9 @@ export const ProjectsContent = styled.div`
 export const ProjectsRow = styled.div`
   display: flex;
   justify-content: space-between;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const ProjectDescription = styled.div`
@@ -43,6 +53,9 @@ export const ProjectDescription = styled.div`
   }
   > div {
     display: flex;
+    @media (max-width: 768px) {
+      align-items: center;
+    }
   }
 `
 
@@ -62,6 +75,7 @@ export const ArrowIcon = styled.div`
 export const Project = styled.a`
   width: 550px;
   cursor: pointer;
+  color: white;
   text-decoration: none;
 
   &:visited {
@@ -72,8 +86,22 @@ export const Project = styled.a`
   &:hover ${ArrowIcon} {
     background-color: ${(props) => props.theme.colors['orange-300']};
   }
+  @media (max-width: 768px) {
+    width: auto;
+    img {
+      width: 300px;
+    }
+  }
+  @media (min-width: 768px) and (max-width: 1024px) {
+    img {
+      width: 600px;
+    }
+  }
 `
 
 export const Description = styled.div`
   width: 450px;
+  @media (max-width: 768px) {
+    width: auto;
+  }
 `
