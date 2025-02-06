@@ -4,6 +4,9 @@ export const LecturesContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 8rem;
+  @media (max-width: 768px) {
+    margin: 0 1rem;
+  }
 `
 export const LecturesHeader = styled.div`
   display: flex;
@@ -28,12 +31,16 @@ export const LecturesContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 8rem;
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `
 
 export const PositiveFeatures = styled.div`
   display: flex;
   flex-direction: column;
   gap: 16px;
+  margin-bottom: 4rem;
 `
 
 export const Feature = styled.div`
@@ -48,5 +55,9 @@ export const Feature = styled.div`
   }
   span {
     color: ${(props) => props.theme.colors['text-secondary']};
+  }
+
+  @media (max-width: 768px) {
+    width: auto;
   }
 `
