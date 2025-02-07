@@ -6,7 +6,7 @@ export const ReviewsContainer = styled.div`
   margin: 0 auto;
   gap: 16px;
   margin-bottom: 8rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin: 0 1rem;
     margin-bottom: 4rem;
     flex-direction: column;
@@ -21,29 +21,7 @@ export const ArrowIcon = styled.div`
   border-radius: 8px;
   width: 40px;
   height: 40px;
-  @media (max-width: 768px) {
-    display: none;
-  }
-`
-
-export const ArrowIconMobile = styled.div`
-  position: absolute;
-  top: -20px;
-  left: 320px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: ${(props) => props.theme.colors['orange-300']};
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-
-  @media (min-width: 768px) and (max-width: 1024px) {
-    border: 1px solid red;
-    top: -20px;
-    left: 500px;
-  }
-  @media (min-width: 1024px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `

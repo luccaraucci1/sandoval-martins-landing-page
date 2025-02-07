@@ -37,8 +37,9 @@ export const ProjectsContent = styled.div`
 export const ProjectsRow = styled.div`
   display: flex;
   justify-content: space-between;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
+    align-items: center;
   }
 `
 

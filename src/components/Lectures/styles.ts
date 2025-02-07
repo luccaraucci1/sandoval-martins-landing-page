@@ -31,7 +31,7 @@ export const LecturesContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 8rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `

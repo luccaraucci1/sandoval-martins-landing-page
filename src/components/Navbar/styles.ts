@@ -5,7 +5,7 @@ export const NavbarContainer = styled.div`
   padding: 2rem 0;
   justify-content: space-between;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin: 0 0.5rem;
   }
 `
@@ -45,7 +45,7 @@ export const NavbarItems = styled.div`
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     display: none;
   }
 `
@@ -60,6 +60,9 @@ export const SocialMedia = styled.div`
   gap: 8px;
 
   @media (max-width: 768px) {
+    display: none;
+  }
+  @media (max-width: 1024px) {
     display: none;
   }
 `
@@ -84,7 +87,7 @@ export const Menu = styled.div`
   border-radius: 100%;
   align-items: center;
   justify-content: center;
-  @media (min-width: 1024px) {
+  @media (min-width: 1025px) {
     display: none;
   }
 `

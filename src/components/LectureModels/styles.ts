@@ -4,7 +4,7 @@ export const LectureModelsContainer = styled.div`
   max-width: 1300px;
   margin: 0 auto;
   margin-bottom: 8rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     margin: 0 1rem;
     margin-bottom: 4rem;
   }

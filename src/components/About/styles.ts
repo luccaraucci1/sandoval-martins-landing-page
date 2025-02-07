@@ -8,7 +8,7 @@ export const AboutContainer = styled.div`
 export const SoftSkills = styled.div`
   display: flex;
   gap: 32px;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-wrap: wrap;
     justify-content: center;
     margin-bottom: 4rem;
@@ -61,7 +61,7 @@ export const Skill = styled.div`
 export const Experience = styled.div`
   display: flex;
   gap: 32px;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     flex-direction: column;
   }
 `
@@ -75,7 +75,7 @@ export const Years = styled.div`
   );
   border-radius: 16px;
   padding: 2rem 4rem 4rem 4rem;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: auto;
     margin: 0 1rem;
   }
@@ -109,7 +109,7 @@ export const ExperienceRecord = styled.div`
   width: 48%;
   flex-wrap: wrap;
   gap: 16px;
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     width: auto;
     justify-content: center;
   }
