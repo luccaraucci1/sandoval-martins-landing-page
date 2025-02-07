@@ -14,7 +14,12 @@ export const GlobalStyle = createGlobalStyle`
     background: ${(props) => props.theme.colors.background};
     -webkit-font-smoothing: antialiased;
     color: #FFFFFF;
+    
   }
+
+  html, body {
+    overflow-x: hidden;
+}
 
   h1, h2, p{
     font-family: 'Finlandica', sans-serif;
