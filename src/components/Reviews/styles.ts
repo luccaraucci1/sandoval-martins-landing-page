@@ -25,6 +25,21 @@ export const ArrowIcon = styled.div`
     display: none;
   }
 `
+export const ArrowRightIcon = styled.div`
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid ${(props) => props.theme.colors['orange-300']};
+  border-radius: 8px;
+  width: 40px;
+  height: 40px;
+  top: 40%;
+  left: 88%;
+  @media (max-width: 1024px) {
+    display: none;
+  }
+`
 
 export const Review = styled.a`
   display: flex;

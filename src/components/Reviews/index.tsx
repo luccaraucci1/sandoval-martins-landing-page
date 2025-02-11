@@ -5,6 +5,7 @@ import {
   Author,
   ArrowIcon,
   IconContainer,
+  ArrowRightIcon,
 } from './styles'
 import { ArrowUpLeft, ArrowUpRight } from 'lucide-react'
 
@@ -34,7 +35,6 @@ export function Reviews() {
         </Text>
         <img src={ceoImg1} width={400} alt="Imagem do Ceo que fez a review" />
       </Review>
-
       <Review>
         <Text>
           <h1>
@@ -48,12 +48,12 @@ export function Reviews() {
           <img src={quotes} alt="Imagem Representando Aspas" />
         </Text>
         <img src={ceoImg2} width={400} alt="Imagem do Ceo que fez a review" />
+        <IconContainer>
+          <ArrowRightIcon>
+            <ArrowUpRight />
+          </ArrowRightIcon>
+        </IconContainer>
       </Review>
-      <IconContainer>
-        <ArrowIcon>
-          <ArrowUpRight />
-        </ArrowIcon>
-      </IconContainer>
     </ReviewsContainer>
   )
 }
