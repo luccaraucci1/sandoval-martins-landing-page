@@ -14,7 +14,6 @@ import {
   faFacebookF,
   faInstagram,
   faLinkedinIn,
-  faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 
 import logo from '../../../public/images/logo.png'
@@ -55,17 +54,14 @@ export function Navbar() {
       </LogoAndNavbar>
       <SocialMediaAndMenu>
         <SocialMedia>
-          <Icon>
+          <Icon href="https://www.instagram.com/sandoval.martins/">
             <FontAwesomeIcon size={'lg'} icon={faInstagram} />
           </Icon>
-          <Icon>
+          <Icon href="https://www.facebook.com/profile.php?id=100002545952526">
             <FontAwesomeIcon size={'lg'} icon={faFacebookF} />
           </Icon>
-          <Icon>
+          <Icon href="https://www.linkedin.com/in/sandoval-martins/">
             <FontAwesomeIcon size={'lg'} icon={faLinkedinIn} />
-          </Icon>
-          <Icon>
-            <FontAwesomeIcon size={'lg'} icon={faXTwitter} />
           </Icon>
         </SocialMedia>
 

@@ -4,7 +4,6 @@ import {
   faFacebookF,
   faInstagram,
   faLinkedinIn,
-  faXTwitter,
 } from '@fortawesome/free-brands-svg-icons'
 import { X } from 'lucide-react'
 import { SetStateAction } from 'react'
@@ -41,17 +40,14 @@ export function MobileMenu({
         </a>
       </ul>
       <SocialMedia>
-        <Icon>
+        <Icon href="https://www.instagram.com/sandoval.martins/">
           <FontAwesomeIcon icon={faInstagram} />
         </Icon>
-        <Icon>
+        <Icon href="https://www.facebook.com/profile.php?id=100002545952526">
           <FontAwesomeIcon icon={faFacebookF} />
         </Icon>
-        <Icon>
+        <Icon href="https://www.linkedin.com/in/sandoval-martins/">
           <FontAwesomeIcon icon={faLinkedinIn} />
-        </Icon>
-        <Icon>
-          <FontAwesomeIcon icon={faXTwitter} />
         </Icon>
       </SocialMedia>
     </MobileMenuContainer>

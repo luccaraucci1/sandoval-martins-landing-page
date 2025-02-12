@@ -37,6 +37,7 @@ export const Close = styled.div`
   display: flex;
   align-items: center;
   justify-content: end;
+  cursor: pointer;
 `
 
 export const SocialMedia = styled.div`
@@ -45,7 +46,7 @@ export const SocialMedia = styled.div`
   justify-content: center;
 `
 
-export const Icon = styled.div`
+export const Icon = styled.a`
   width: 30px;
   height: 30px;
   padding: 0.1rem;
@@ -54,4 +55,9 @@ export const Icon = styled.div`
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
+  &:visited {
+    color: white;
+  }
 `

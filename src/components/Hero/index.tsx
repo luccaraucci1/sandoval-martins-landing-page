@@ -10,7 +10,7 @@ import whatsappLogo from '../../../public/images/whatsapp.png'
 
 export function Hero() {
   function handleWhatsAppButtonClick() {
-    window.location.href = 'https://wa.me/5511987654321'
+    window.location.href = 'https://wa.me/5511917192907'
   }
 
   return (

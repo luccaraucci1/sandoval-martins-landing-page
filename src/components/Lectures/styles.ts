@@ -31,6 +31,16 @@ export const LecturesContent = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 8rem;
+
+  a {
+    margin-left: 1rem;
+    text-decoration: none;
+
+    span {
+      color: ${(props) => props.theme.colors['orange-300']};
+      font-weight: 600;
+    }
+  }
   @media (max-width: 1024px) {
     flex-direction: column;
   }

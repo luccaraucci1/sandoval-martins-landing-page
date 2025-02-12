@@ -20,6 +20,9 @@ export function Lectures() {
             Consultoria estratégica para melhorar desempenho, eficiência e
             organização empresarial.
           </span>
+          <a href="https://wa.me/5511917192907">
+            <span>Saiba +</span>
+          </a>
         </HeaderDescription>
       </LecturesHeader>
       <LecturesContent>
@@ -30,6 +33,9 @@ export function Lectures() {
               Como liderar equipes com excelência, motivar pessoas e alcançar
               resultados extraordinários.
             </span>
+            <a href="https://wa.me/5511917192907">
+              <span>Saiba +</span>
+            </a>
           </Feature>
           <Feature>
             <h1>02 Estratégias para o Sucesso Empresaria</h1>
@@ -37,6 +43,9 @@ export function Lectures() {
               Abordagens práticas para superar desafios, inovar e impulsionar o
               crescimento sustentável.
             </span>
+            <a href="https://wa.me/5511917192907">
+              <span>Saiba +</span>
+            </a>
           </Feature>
           <Feature>
             <h1>03 Gestão de Mudanças e Inovação</h1>
@@ -44,6 +53,9 @@ export function Lectures() {
               Adaptação a novos cenários e criação de soluções disruptivas para
               se manter à frente no mercado.
             </span>
+            <a href="https://wa.me/5511917192907">
+              <span>Saiba +</span>
+            </a>
           </Feature>
         </PositiveFeatures>
         <img src={lecturesImg} alt="Imagem para representar palestras" />

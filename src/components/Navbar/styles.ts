@@ -67,7 +67,7 @@ export const SocialMedia = styled.div`
   }
 `
 
-export const Icon = styled.div`
+export const Icon = styled.a`
   width: 30px;
   height: 30px;
   padding: 0.1rem;
@@ -76,10 +76,16 @@ export const Icon = styled.div`
   border-radius: 100%;
   justify-content: center;
   align-items: center;
+  text-decoration: none;
+  color: white;
+  &:visited {
+    color: white;
+  }
 `
 
 export const Menu = styled.div`
   position: relative;
+  cursor: pointer;
   display: flex;
   width: 46px;
   height: 46px;
