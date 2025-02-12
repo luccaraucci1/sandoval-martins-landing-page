@@ -27,7 +27,7 @@ import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone'
 import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
 import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
 import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
-import { faXTwitter } from '@fortawesome/free-brands-svg-icons/faXTwitter'
+
 export function Footer() {
   return (
     <FooterContainer id="contact">
@@ -45,7 +45,7 @@ export function Footer() {
               </Logo>
               <h1>Estamos prontos para começar?</h1>
             </EmailHeader>
-            <Email>
+            <Email href="https://mail.google.com/mail/?view=cm&fs=1&to=contato@sandovalmartins.com">
               <span>contato@sandovalmartins.com</span>
               <Mail size={16} />
             </Email>
@@ -53,11 +53,22 @@ export function Footer() {
           <QuickLinks>
             <h2>Quick Links</h2>
             <ul>
-              <li>About Us</li>
-              <li>Service</li>
-              <li>Contact Us</li>
-              <li>Blog Post</li>
-              <li>Pricing</li>
+              <li>
+                <a href="/">Home</a>
+              </li>
+
+              <li>
+                <a href="#about">Sobre</a>
+              </li>
+              <li>
+                <a href="#lectures">Palestras</a>
+              </li>
+              <li>
+                <a href="#projects">Projetos</a>
+              </li>
+              <li>
+                <a href="#contact">Contato</a>
+              </li>
             </ul>
           </QuickLinks>
           <Contact>
@@ -82,17 +93,14 @@ export function Footer() {
                 <span>+55 11 98765 4321</span>
               </Item>
               <SocialMedia>
-                <SocialMediaIcon>
+                <SocialMediaIcon href="https://www.instagram.com/sandoval.martins/">
                   <FontAwesomeIcon icon={faInstagram} />
                 </SocialMediaIcon>
-                <SocialMediaIcon>
+                <SocialMediaIcon href="https://www.facebook.com/profile.php?id=100002545952526">
                   <FontAwesomeIcon icon={faFacebookF} />
                 </SocialMediaIcon>
-                <SocialMediaIcon>
+                <SocialMediaIcon href="https://www.linkedin.com/in/sandoval-martins/">
                   <FontAwesomeIcon icon={faLinkedinIn} />
-                </SocialMediaIcon>
-                <SocialMediaIcon>
-                  <FontAwesomeIcon icon={faXTwitter} />
                 </SocialMediaIcon>
               </SocialMedia>
             </ContactInfo>
@@ -100,8 +108,7 @@ export function Footer() {
         </FooterContent>
         <FooterInfo>
           <DesignerAndRights>
-            <span>@datcho_desiner_2025</span>
-            <span>®Sandoval Martins - All Rights Reserved</span>
+            <span>® {''}Sandoval Martins - All Rights Reserved</span>
           </DesignerAndRights>
           <TermsAndPolitics>
             <span>Termos & Condições</span>

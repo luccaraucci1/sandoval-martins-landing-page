@@ -20,9 +20,6 @@ export function Lectures() {
             Consultoria estratégica para melhorar desempenho, eficiência e
             organização empresarial.
           </span>
-          <a href="https://wa.me/5511917192907">
-            <span>Saiba +</span>
-          </a>
         </HeaderDescription>
       </LecturesHeader>
       <LecturesContent>

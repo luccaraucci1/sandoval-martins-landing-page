@@ -59,13 +59,27 @@ export const Logo = styled.div`
   }
 `
 
-export const Email = styled.div`
+export const Email = styled.a`
   display: flex;
   align-items: center;
   width: 100%;
   padding: 0.5rem 0;
   justify-content: space-between;
   border-bottom: 2px solid ${(props) => props.theme.colors.border};
+  text-decoration: none;
+  color: white;
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: white;
+  &:hover {
+    color: ${(props) => props.theme.colors['orange-300']};
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color: ${(props) => props.theme.colors['orange-300']};
+    }
+  }
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 80%;
   }
@@ -78,6 +92,20 @@ export const QuickLinks = styled.div`
   }
   ul {
     list-style-type: none;
+    a {
+      text-decoration: none;
+      transition: color 0.2s ease-in-out;
+      color: white;
+      &:hover {
+        color: ${(props) => props.theme.colors['orange-300']};
+      }
+      &:visited {
+        color: white;
+        &:hover {
+          color: ${(props) => props.theme.colors['orange-300']};
+        }
+      }
+    }
   }
   @media (max-width: 768px) {
     text-align: center;
@@ -122,7 +150,7 @@ export const SocialMedia = styled.div`
   margin-top: 1rem;
 `
 
-export const SocialMediaIcon = styled.div`
+export const SocialMediaIcon = styled.a`
   display: flex;
   align-items: center;
   justify-content: center;
@@ -130,6 +158,18 @@ export const SocialMediaIcon = styled.div`
   width: 40px;
   border-radius: 50%;
   background: ${(props) => props.theme.colors.border};
+  text-decoration: none;
+  transition: color 0.2s ease-in-out;
+  color: white;
+  &:hover {
+    color: ${(props) => props.theme.colors['orange-300']};
+  }
+  &:visited {
+    color: white;
+    &:hover {
+      color: ${(props) => props.theme.colors['orange-300']};
+    }
+  }
 `
 
 export const FooterInfo = styled.div`

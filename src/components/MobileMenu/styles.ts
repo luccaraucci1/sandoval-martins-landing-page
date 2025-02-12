@@ -56,8 +56,15 @@ export const Icon = styled.a`
   justify-content: center;
   align-items: center;
   text-decoration: none;
+  transition: color 0.2s ease-in-out;
   color: white;
+  &:hover {
+    color: ${(props) => props.theme.colors['orange-300']};
+  }
   &:visited {
     color: white;
+    &:hover {
+      color: ${(props) => props.theme.colors['orange-300']};
+    }
   }
 `
