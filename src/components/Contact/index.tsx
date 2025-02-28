@@ -11,7 +11,7 @@ import {
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import axios from 'axios'
+import supabase from '../../utils/supabase'
 
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -40,25 +40,18 @@ export function Contact() {
   })
 
   async function sendMail(data: ContactFormType) {
-    const msg = {
-      to: 'luccaraucci@gmail.com', // Change to your recipient
-      from: 'luccaraucci@gmail.com', // Change to your verified sender
-      subject: data.subject,
-      text: data.message,
-      html: `
-      <strong>Nome:</strong>${data.name}<br>
-      <strong>Email:</strong>${data.email}<br>
-      <strong>Assunto:</strong>${data.subject}<br>
-      <strong>Mensagem:</strong><br>
-      ${data.message}`,
-    }
-
     try {
-      await axios.post('http://localhost:3335/send-email', msg)
-      alert('Email enviado com sucesso!')
+      await supabase.from('Contacts').insert({
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+        createdAt: new Date(),
+      })
+      alert('Mensagem enviada com sucesso!')
       reset()
-    } catch (error) {
-      console.error(error)
+    } catch (err) {
+      console.log(err)
     }
   }
 
