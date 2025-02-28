@@ -11,8 +11,7 @@ import {
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import { getDatabase, ref, set } from 'firebase/database'
-import { v4 as uuidv4 } from 'uuid'
+import supabase from '../../utils/supabase'
 
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -35,11 +34,26 @@ export function Contact() {
     register,
     handleSubmit,
     formState: { errors },
+    reset,
   } = useForm<ContactFormType>({
     resolver: zodResolver(contactFormSchema),
   })
 
-  async function sendMail(data: ContactFormType) {}
+  async function sendMail(data: ContactFormType) {
+    try {
+      await supabase.from('Contacts').insert({
+        name: data.name,
+        email: data.email,
+        subject: data.subject,
+        message: data.message,
+        createdAt: new Date(),
+      })
+      alert('Mensagem enviada com sucesso!')
+      reset()
+    } catch (err) {
+      console.log(err)
+    }
+  }
 
   return (
     <ContactContainer id="contact">
