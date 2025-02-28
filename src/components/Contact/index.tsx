@@ -11,7 +11,8 @@ import {
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
-import axios from 'axios'
+import { getDatabase, ref, set } from 'firebase/database'
+import { v4 as uuidv4 } from 'uuid'
 
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -34,33 +35,11 @@ export function Contact() {
     register,
     handleSubmit,
     formState: { errors },
-    reset,
   } = useForm<ContactFormType>({
     resolver: zodResolver(contactFormSchema),
   })
 
-  async function sendMail(data: ContactFormType) {
-    const msg = {
-      to: 'luccaraucci@gmail.com', // Change to your recipient
-      from: 'luccaraucci@gmail.com', // Change to your verified sender
-      subject: data.subject,
-      text: data.message,
-      html: `
-      <strong>Nome:</strong>${data.name}<br>
-      <strong>Email:</strong>${data.email}<br>
-      <strong>Assunto:</strong>${data.subject}<br>
-      <strong>Mensagem:</strong><br>
-      ${data.message}`,
-    }
-
-    try {
-      await axios.post('http://localhost:3335/send-email', msg)
-      alert('Email enviado com sucesso!')
-      reset()
-    } catch (error) {
-      console.error(error)
-    }
-  }
+  async function sendMail(data: ContactFormType) {}
 
   return (
     <ContactContainer id="contact">
