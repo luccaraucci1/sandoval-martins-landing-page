@@ -11,57 +11,19 @@ export const ReviewsContainer = styled.div`
     margin-bottom: 16rem;
     flex-direction: column;
     gap: 128px;
-  }
-`
-export const ArrowIcon = styled.div`
-  display: flex;
-  align-items: center;
-
-  justify-content: center;
-  border: 1px solid ${(props) => props.theme.colors['orange-300']};
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-  @media (max-width: 1024px) {
-    display: none;
-  }
-`
-export const ArrowRightIcon = styled.div`
-  position: absolute;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  border: 1px solid ${(props) => props.theme.colors['orange-300']};
-  border-radius: 8px;
-  width: 40px;
-  height: 40px;
-  top: 40%;
-  left: 88%;
-  @media (max-width: 1024px) {
-    display: none;
+    align-items: center;
   }
 `
 
-export const IconContainer = styled.div`
-  display: flex;
-  align-items: center;
-`
-
-export const Review = styled.a`
+export const Review = styled.div`
   display: flex;
   position: relative;
   width: 700px;
   justify-content: center;
-  cursor: pointer;
-  text-decoration: none;
-
-  &:visited {
-    text-decoration: none;
-    color: white;
-  }
 
   @media (max-width: 768px) {
     width: auto;
+
     > img {
       width: 300px;
     }

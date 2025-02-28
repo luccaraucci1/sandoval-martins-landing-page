@@ -55,7 +55,9 @@ export function Lectures() {
             </a>
           </Feature>
         </PositiveFeatures>
-        <img src={lecturesImg} alt="Imagem para representar palestras" />
+        <div>
+          <img src={lecturesImg} alt="Imagem para representar palestras" />
+        </div>
       </LecturesContent>
       <CompanyLogos />
     </LecturesContainer>

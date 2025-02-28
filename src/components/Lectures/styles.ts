@@ -41,8 +41,10 @@ export const LecturesContent = styled.div`
       font-weight: 600;
     }
   }
+
   @media (max-width: 1024px) {
     flex-direction: column;
+    align-items: center;
   }
 `
 
