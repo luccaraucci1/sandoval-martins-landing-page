@@ -7,6 +7,7 @@ declare module 'styled-components' {
       'background-secondary': string
       'background-terciary': string
       'orange-300': string
+      'orange-400': string
       'text-primary': string
       'text-secondary': string
       border: string

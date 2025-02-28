@@ -52,6 +52,7 @@ export const NavbarItems = styled.div`
 
 export const SocialMediaAndMenu = styled.div`
   display: flex;
+  position: relative;
   align-items: center;
   gap: 16px;
 `

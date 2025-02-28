@@ -5,8 +5,8 @@ export const MobileMenuContainer = styled.div<{ show: boolean }>`
   background: ${(props) => props.theme.colors['orange-300']};
   width: 270px;
   height: 330px;
-  top: 60px;
-  left: 90px;
+  top: 30px;
+  right: 30px;
   border-radius: 16px;
   box-sizing: border-box;
   padding: 2rem;

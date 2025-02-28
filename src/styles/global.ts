@@ -26,7 +26,7 @@ export const GlobalStyle = createGlobalStyle`
     font-weight: 700;
   }
 
-   span, li{
+   span, li, label{
     font-family: 'Rubik', sans-serif;
     font-weight: 400;
     line-height: 185%;
