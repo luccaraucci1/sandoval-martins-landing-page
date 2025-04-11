@@ -3,7 +3,7 @@ import heroBg from '../../../public/images/hero.png'
 
 export const HeroContainer = styled.div`
   background: url(${heroBg});
-
+  background-size: cover;
   height: 800px;
 `
 

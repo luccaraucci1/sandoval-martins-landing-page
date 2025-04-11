@@ -1,13 +1,4 @@
-import {
-  Review,
-  ReviewsContainer,
-  Text,
-  Author,
-  ArrowIcon,
-  IconContainer,
-  ArrowRightIcon,
-} from './styles'
-import { ArrowUpLeft, ArrowUpRight } from 'lucide-react'
+import { Review, ReviewsContainer, Text, Author } from './styles'
 
 import ceoImg1 from '../../../public/images/reviews-1.png'
 import ceoImg2 from '../../../public/images/reviews-2.png'
@@ -16,11 +7,6 @@ import quotes from '../../../public/images/reviews-icon.png'
 export function Reviews() {
   return (
     <ReviewsContainer>
-      <IconContainer>
-        <ArrowIcon>
-          <ArrowUpLeft />
-        </ArrowIcon>
-      </IconContainer>
       <Review>
         <Text>
           <h1>
@@ -48,11 +34,6 @@ export function Reviews() {
           <img src={quotes} alt="Imagem Representando Aspas" />
         </Text>
         <img src={ceoImg2} width={400} alt="Imagem do Ceo que fez a review" />
-        <IconContainer>
-          <ArrowRightIcon>
-            <ArrowUpRight />
-          </ArrowRightIcon>
-        </IconContainer>
       </Review>
     </ReviewsContainer>
   )
