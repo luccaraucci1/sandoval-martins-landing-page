@@ -36,7 +36,6 @@ export const Skill = styled.div`
   span {
     padding: 0 1rem;
     font-size: 14px;
-    color: ${(props) => props.theme.colors['text-secondary']};
   }
 
   &:before {
