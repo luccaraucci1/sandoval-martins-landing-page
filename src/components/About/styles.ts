@@ -23,18 +23,20 @@ export const Skill = styled.div`
   padding: 0.75rem 1rem;
   align-items: center;
   text-align: center;
-  border-radius: 16px; /* Mantém as bordas arredondadas */
+  border-radius: 16px;
   margin-bottom: 3rem;
 
   img {
     margin: 2rem 0;
   }
   h1 {
-    font-size: 22px;
+    font-size: 24px;
     margin-bottom: 1rem;
   }
   span {
     padding: 0 1rem;
+    font-size: 14px;
+    color: ${(props) => props.theme.colors['text-secondary']};
   }
 
   &:before {
@@ -60,9 +62,10 @@ export const Skill = styled.div`
 `
 export const Experience = styled.div`
   display: flex;
-  gap: 32px;
+  justify-content: space-between;
   @media (max-width: 1024px) {
     flex-direction: column;
+    gap: 32px;
   }
 `
 
@@ -78,6 +81,10 @@ export const Years = styled.div`
   @media (max-width: 1024px) {
     width: auto;
     margin: 0 1rem;
+  }
+
+  span {
+    color: ${(props) => props.theme.colors['text-secondary']};
   }
 `
 
@@ -109,6 +116,7 @@ export const ExperienceRecord = styled.div`
   width: 48%;
   flex-wrap: wrap;
   gap: 16px;
+
   @media (max-width: 1024px) {
     width: auto;
     justify-content: center;
@@ -116,23 +124,31 @@ export const ExperienceRecord = styled.div`
 `
 
 export const ExperienceRecordCard = styled.div`
-  width: 300px;
+  width: 250px;
   display: flex;
   border-radius: 16px;
   gap: 8px;
   align-items: center;
   justify-content: center;
   flex-direction: column;
+  text-align: center;
+  padding: 1rem;
   background-color: ${(props) => props.theme.colors['background-secondary']};
   h1 {
-    font-size: 48px;
+    font-size: 24px;
   }
   @media (max-width: 768px) {
-    width: 150px;
+    width: 200px;
     padding: 1rem;
   }
   @media (min-width: 768px) and (max-width: 1024px) {
     width: 300px;
     padding: 1rem;
+  }
+  span {
+    font-size: 14px;
+    text-align: center;
+    padding: 0 1rem;
+    color: ${(props) => props.theme.colors['text-secondary']};
   }
 `

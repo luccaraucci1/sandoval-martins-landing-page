@@ -22,11 +22,16 @@ export function Hero() {
           <h2>Vamos conversar?</h2>
           <h1>
             Meu nome é Sandoval Martins e sou{' '}
-            <OrangeText>palestrante.</OrangeText>
+            <OrangeText>seu Consultor</OrangeText>
           </h1>
           <span>
-            CEO de grandes empresas e palestrante renomado, compartilho
-            estratégias e experiências para impulsionar carreiras e negócios.
+            Executivo experiente, conselheiro de grandes empresas e mentor de
+            muitos empresários e startups que hoje são unicórnios ou apresentam
+            crescimento exponencial Minha missão é clara:{' '}
+            <strong>
+              ajudar empreendedores, executivos e conselheiros a entregar forte
+              crescimento.
+            </strong>
           </span>
 
           <WhatsAppButton onClick={() => handleWhatsAppButtonClick()}>

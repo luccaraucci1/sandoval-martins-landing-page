@@ -12,9 +12,6 @@ import {
   Icon,
   Item,
   Logo,
-  QuickLinks,
-  SocialMedia,
-  SocialMediaIcon,
   TermsAndPolitics,
 } from './styles'
 import orangeLogo from '../../../public/images/orange-logo.png'
@@ -23,10 +20,6 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEnvelope } from '@fortawesome/free-solid-svg-icons/faEnvelope'
 import { faLocationDot } from '@fortawesome/free-solid-svg-icons/faLocationDot'
 import { faPhone } from '@fortawesome/free-solid-svg-icons/faPhone'
-
-import { faInstagram } from '@fortawesome/free-brands-svg-icons/faInstagram'
-import { faFacebookF } from '@fortawesome/free-brands-svg-icons/faFacebookF'
-import { faLinkedinIn } from '@fortawesome/free-brands-svg-icons/faLinkedinIn'
 
 export function Footer() {
   return (
@@ -50,27 +43,7 @@ export function Footer() {
               <Mail size={16} />
             </Email>
           </EmailContainer>
-          <QuickLinks>
-            <h2>Quick Links</h2>
-            <ul>
-              <li>
-                <a href="/">Home</a>
-              </li>
 
-              <li>
-                <a href="#about">Sobre</a>
-              </li>
-              <li>
-                <a href="#lectures">Palestras</a>
-              </li>
-              <li>
-                <a href="#projects">Projetos</a>
-              </li>
-              <li>
-                <a href="#contact">Contato</a>
-              </li>
-            </ul>
-          </QuickLinks>
           <Contact>
             <h2>Contato</h2>
             <ContactInfo>
@@ -92,17 +65,6 @@ export function Footer() {
                 </Icon>
                 <span>+55 11 98765 4321</span>
               </Item>
-              <SocialMedia>
-                <SocialMediaIcon href="https://www.instagram.com/sandoval.martins/">
-                  <FontAwesomeIcon icon={faInstagram} />
-                </SocialMediaIcon>
-                <SocialMediaIcon href="https://www.facebook.com/profile.php?id=100002545952526">
-                  <FontAwesomeIcon icon={faFacebookF} />
-                </SocialMediaIcon>
-                <SocialMediaIcon href="https://www.linkedin.com/in/sandoval-martins/">
-                  <FontAwesomeIcon icon={faLinkedinIn} />
-                </SocialMediaIcon>
-              </SocialMedia>
             </ContactInfo>
           </Contact>
         </FooterContent>

@@ -6,12 +6,16 @@ import {
   ContactDescription,
   ContactForm,
   ContactHeader,
+  FormItems,
+  FormItemsAndWhatsAppButton,
   SendButton,
+  WhatsAppButton,
 } from './styles'
 import { z } from 'zod'
 import { useForm } from 'react-hook-form'
 import { zodResolver } from '@hookform/resolvers/zod'
 import supabase from '../../utils/supabase'
+import whatsappLogo from '../../../public/images/whatsapp.png'
 
 const contactFormSchema = z.object({
   name: z.string().min(3, { message: 'Nome deve ter no mínimo 3 caracteres' }),
@@ -55,27 +59,45 @@ export function Contact() {
     }
   }
 
+  function handleWhatsAppButtonClick() {
+    window.location.href = 'https://wa.me/5511917192907'
+  }
+
   return (
     <ContactContainer id="contact">
       <ContactHeader>
-        <h2>CONTATO</h2>
+        <h2>Fale comigo agora</h2>
         <h1>Mantenha-nos conectados</h1>
         <ContactDescription>
           <span>
-            Entre em contato conosco para saber mais sobre nossos serviços
+            Eu te ajudo a responder essas perguntas e a executar seu plano de
+            crescimento e expansão
           </span>
         </ContactDescription>
       </ContactHeader>
       <ContactForm onSubmit={handleSubmit(sendMail)}>
-        <label htmlFor="name">Nome:</label>
-        <TextInput type="text" id="name" register={register} />
-        <span>{errors.name?.message}</span>
-        <label htmlFor="email">Email:</label>
-        <TextInput type="email" id="email" register={register} />
-        <span>{errors.email?.message}</span>
-        <label htmlFor="subject">Assunto:</label>
-        <TextInput type="text" id="subject" register={register} />
-        <span>{errors.subject?.message}</span>
+        <FormItemsAndWhatsAppButton>
+          <FormItems>
+            <label htmlFor="name">Nome:</label>
+            <TextInput type="text" id="name" register={register} />
+            <span>{errors.name?.message}</span>
+            <label htmlFor="email">Email:</label>
+            <TextInput type="email" id="email" register={register} />
+            <span>{errors.email?.message}</span>
+            <label htmlFor="subject">Assunto:</label>
+            <TextInput type="text" id="subject" register={register} />
+            <span>{errors.subject?.message}</span>
+          </FormItems>
+          <WhatsAppButton onClick={handleWhatsAppButtonClick}>
+            <span>Ou me chame no WhatsApp</span>
+            <img
+              src={whatsappLogo}
+              width={40}
+              height={40}
+              alt="Logo do whatsapp"
+            />
+          </WhatsAppButton>
+        </FormItemsAndWhatsAppButton>
         <label htmlFor="message">Mensagem:</label>
         <TextArea id="message" register={register} />
         <span>{errors.message?.message}</span>

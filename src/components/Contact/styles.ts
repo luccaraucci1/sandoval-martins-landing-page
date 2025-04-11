@@ -54,6 +54,31 @@ export const ContactForm = styled.form`
   }
 `
 
+export const FormItems = styled.div`
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+`
+
+export const FormItemsAndWhatsAppButton = styled.div`
+  display: flex;
+`
+
+export const WhatsAppButton = styled.div`
+  display: flex;
+  flex-direction: column;
+  cursor: pointer;
+  height: fit-content;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  span {
+    color: ${(props) => props.theme.colors['text-primary']};
+  }
+`
+
 export const SendButton = styled.div`
   margin-top: 1rem;
   width: 100%;

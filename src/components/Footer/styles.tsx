@@ -85,34 +85,11 @@ export const Email = styled.a`
   }
 `
 
-export const QuickLinks = styled.div`
-  h2 {
-    font-size: 24px;
-    margin-bottom: 2rem;
-  }
-  ul {
-    list-style-type: none;
-    a {
-      text-decoration: none;
-      transition: color 0.2s ease-in-out;
-      color: white;
-      &:hover {
-        color: ${(props) => props.theme.colors['orange-300']};
-      }
-      &:visited {
-        color: white;
-        &:hover {
-          color: ${(props) => props.theme.colors['orange-300']};
-        }
-      }
-    }
-  }
-  @media (max-width: 768px) {
-    text-align: center;
-  }
-`
-
 export const Contact = styled.div`
+  width: 500px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   h2 {
     font-size: 24px;
     margin-bottom: 2rem;
@@ -121,6 +98,8 @@ export const Contact = styled.div`
     display: flex;
     flex-direction: column;
     align-items: center;
+    width: auto;
+    margin-top: 2rem;
   }
 `
 export const ContactInfo = styled.div``

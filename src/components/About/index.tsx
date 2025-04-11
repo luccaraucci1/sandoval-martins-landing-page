@@ -25,8 +25,8 @@ export function About() {
           />
           <h1>Liderança Estratégica</h1>
           <span>
-            Capacidade de definir metas claras, tomar decisões importantes e
-            inspirar equipes a alcançar resultados.
+            Voce sabe liderar seu time para entregar crescimento sustentável?
+            Criar metas e executa las imediatamente?
           </span>
         </Skill>
         <Skill>
@@ -37,8 +37,8 @@ export function About() {
           />
           <h1>Visão de Longo Prazo</h1>
           <span>
-            Habilidade de prever tendências, identificar oportunidades e traçar
-            caminhos para o crescimento sustentável da empresa.
+            Qual é o caminho futuro que você tem que seguir? Voce sabe executar
+            seu plano de transformação e capturar as alavancas de crescimento?
           </span>
         </Skill>
         <Skill>
@@ -49,8 +49,11 @@ export function About() {
           />
           <h1>Adaptabilidade</h1>
           <span>
-            Facilidade para se ajustar a mudanças no mercado, gerenciar crises e
-            encontrar soluções inovadoras.
+            &quot;Se alguém pesquisasse seu nome hoje no Google, encontraria um
+            líder pronto?&quot; <br />
+            &quot;Qual o caminho do sucesso através do eu desenvolvimento?&quot;{' '}
+            <br />
+            &quot;Qual o primeiro passo?&quot;
           </span>
         </Skill>
         <Skill>
@@ -69,30 +72,43 @@ export function About() {
       <Experience>
         <Years>
           <YearsHeader>
-            <h1>25</h1>
+            <h1>30</h1>
             <h2>Anos de Experiência</h2>
           </YearsHeader>
           <span>
-            Com 25 anos de experiência, ofereço insights estratégicos para
-            impulsionar eficiência e performance empresarial.
+            Com 30 anos de experiencia ajudando empresas, empresários,
+            investidores e executivos a transformar seu negócio e carreira
+            através de entrega de resultados exponenciais de crescimento. Ajudei
+            a criar a Multiplus Fidelidade do zero ao valuation de R$5bilhões
           </span>
         </Years>
         <ExperienceRecord>
           <ExperienceRecordCard>
-            <h1>+20k</h1>
-            <span>Horas do que?</span>
+            <h1>10 anos Conseheiros</h1>
+            <span>
+              Banco Original, CVC Viagens, Banco BMG, Aviva Hotelaria e mais 10
+              empresas
+            </span>
           </ExperienceRecordCard>
           <ExperienceRecordCard>
-            <h1>+10k</h1>
-            <span>Fazendo?</span>
+            <h1>10 anos Mentor Endeavor</h1>
+            <span>
+              Mentor de algumas empresas que hoje são unicórnios e outras com
+              grande crescimento exponencial
+            </span>
           </ExperienceRecordCard>
           <ExperienceRecordCard>
-            <h1>+200</h1>
-            <span>Alguma coisa</span>
+            <h1>30 mil seguidores e conexões</h1>
+            <span>
+              no LinkedIn com grandes executivos, emopreendedores, conselheiros
+              criando um dos melhores network
+            </span>
           </ExperienceRecordCard>
           <ExperienceRecordCard>
-            <h1>+2k</h1>
-            <span>Satisfeitos com algo</span>
+            <span>
+              Já participei de 4 IPOs, comprei e vendi mais de 20 empresas. Sou
+              investidor em 5 startups promissoras
+            </span>
           </ExperienceRecordCard>
         </ExperienceRecord>
       </Experience>
