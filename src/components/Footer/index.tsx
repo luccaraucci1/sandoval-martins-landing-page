@@ -38,8 +38,8 @@ export function Footer() {
               </Logo>
               <h1>Estamos prontos para começar?</h1>
             </EmailHeader>
-            <Email href="https://mail.google.com/mail/?view=cm&fs=1&to=contato@sandovalmartins.com">
-              <span>contato@sandovalmartins.com</span>
+            <Email href="https://mail.google.com/mail/?view=cm&fs=1&to=contato@sandovalmartins.com.br">
+              <span>contato@sandovalmartins.com.br</span>
               <Mail size={16} />
             </Email>
           </EmailContainer>
@@ -51,7 +51,7 @@ export function Footer() {
                 <Icon>
                   <FontAwesomeIcon icon={faEnvelope} />
                 </Icon>
-                <span>contato@sandovalmartins.com</span>
+                <span>contato@sandovalmartins.com.br</span>
               </Item>
               <Item>
                 <Icon>
@@ -63,7 +63,7 @@ export function Footer() {
                 <Icon>
                   <FontAwesomeIcon icon={faPhone} />
                 </Icon>
-                <span>+55 11 98765 4321</span>
+                <span>+55 11 91719-2907</span>
               </Item>
             </ContactInfo>
           </Contact>

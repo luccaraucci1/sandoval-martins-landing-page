@@ -51,8 +51,7 @@ export function About() {
           <span>
             &quot;Se alguém pesquisasse seu nome hoje no Google, encontraria um
             líder pronto?&quot; <br />
-            &quot;Qual o caminho do sucesso através do eu desenvolvimento?&quot;{' '}
-            <br />
+            &quot;Qual o caminho do sucesso?&quot; <br />
             &quot;Qual o primeiro passo?&quot;
           </span>
         </Skill>
